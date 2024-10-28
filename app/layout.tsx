@@ -1,24 +1,31 @@
 import "@/app/ui/global.css";
-import { inter } from "@/app/ui/fonts";
+
 import { Metadata } from "next";
+import { inter } from "@/app/ui/fonts";
+import { headers } from "next/headers";
+import ContextProvider from "@/context";
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
+    template: "%s | Web3 Lotto",
+    default: "Home",
   },
-  description: 'The official Next.js Learn Dashboard built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+  description: "A web3 dApp example project",
+  metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
+  const cookies = (await headers()).get("cookie");
+
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        <ContextProvider cookies={cookies}>{children}</ContextProvider>
+      </body>
     </html>
   );
 }
