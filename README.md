@@ -67,3 +67,6 @@ https://cloud.reown.com/
 https://docs.reown.com/appkit/next/core/components
 
 https://wagmi.sh/react/guides/connect-wallet
+
+TestNet tokens:
+https://faucets.chain.link/sepolia
