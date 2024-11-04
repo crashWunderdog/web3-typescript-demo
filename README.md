@@ -1,19 +1,19 @@
-# Web3 dApp Lottery Demo
+# [WIP] Web3 dApp Coin Toss Demo
 
 ## Overview
 
-This project is a simple lottery game where users can bet on their favorite number and win big prizes. It is built using Next.js, Tailwind CSS, and TypeScript. The project demonstrates how to build a Web3 decentralized application (dApp) that interacts with the Ethereum blockchain.
+This project is a simple coin toss game where users can try to guess the end result of a coin toss to win some tokens. It is built using Next.js, Tailwind CSS, and TypeScript. The project demonstrates how to build a Web3 decentralized application (dApp) that interacts with the Ethereum blockchain.
 
 ## Features
 
 - **User Authentication**: Connect your wallet using popular wallet providers.
-- **Lottery Game**: Bet on your favorite number and participate in the lottery.
-- **Blockchain Integration**: All transactions are done on the Rinkeby testnet.
+- **Coin toss Game**: A UI for creating bets & seeing bet history for the connected Web3 wallet.
+- **Blockchain Integration**: This project demonstrates how to request transactions from the users and how to transfer payouts. All transactions are done on the Sepolia testnet.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 
 ## Technologies Used
 
-- **Next.js**: A React framework for server-side rendering and generating static websites.
+- **Next.js**: A React framework for server-side rendering and generating static websites (NextJs 15).
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **TypeScript**: A statically typed superset of JavaScript.
 - **Web3.js**: A JavaScript library for interacting with the Ethereum blockchain.
@@ -31,14 +31,14 @@ This project is a simple lottery game where users can bet on their favorite numb
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/web3-lottery-demo.git
-   cd web3-lottery-demo
+   git clone https://github.com/crashWunderdog/web3-typescript-demo.git
+   cd web3-typescript-demo
 
 2. Install dependencies:
 
 pnpm install
 
-3. Create a .env.local file in the root directory and add your environment variables
+3. Create a .env.local file in the root directory and add your environment variables (check .env.example)
 
 4. Run the development server:
 
@@ -48,8 +48,9 @@ pnpm dev
 
 ## Usage
 1. Connect your Ethereum wallet using the "Connect Wallet" button.
-2. Enter your favorite number and place a bet.
-3. Wait for the lottery draw and see if you win!
+2. Fill the form to create a new bet.
+3. Check the history and see if you win!
+4. Claim your price & play again
 
 
 
@@ -68,5 +69,5 @@ https://docs.reown.com/appkit/next/core/components
 
 https://wagmi.sh/react/guides/connect-wallet
 
-TestNet tokens:
+Testnet tokens:
 https://faucets.chain.link/sepolia
