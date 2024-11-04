@@ -6,7 +6,7 @@ import { ArrowUpIcon, ArrowDownIcon } from "@heroicons/react/24/outline";
 
 import { createBet, State } from "@/app/lib/actions";
 import HeroImage from "@/app/ui/HeroImage";
-import { Button } from "@/app/ui/Button";
+import Button from "@/app/ui/Button";
 
 const initialState: State = { message: null, errors: {} };
 

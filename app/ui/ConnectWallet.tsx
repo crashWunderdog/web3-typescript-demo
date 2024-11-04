@@ -16,7 +16,7 @@ import { sepolia } from "viem/chains";
 import { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
-import { Button } from "./Button";
+import Button from "@/app/ui/Button";
 
 export function ConnectWallet() {
   const router = useRouter();
